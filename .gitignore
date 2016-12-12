@@ -1,1 +1,5 @@
 .idea
+.vagrant
+.conf
+ubuntu-xenial-16.04-cloudimg-console.log
+dh4096.pem
