@@ -21,7 +21,7 @@ if [ ${REPOSITORY_EXISTS} = "false" ]; then
     apt-get install -y git
     git clone https://github.com/aaronheath/vpn-init.git ${REPOSITORY_PATH}
     cd ${REPOSITORY_PATH}
-    git checkout server-init-bug
+    git checkout master
 fi
 
 # If so, then just perform a pull.
