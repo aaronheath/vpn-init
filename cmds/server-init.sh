@@ -55,7 +55,7 @@ cp server.crt server.key ca.crt /etc/openvpn/
 if [ ${USE_SUPPLIED_DH4096_KEYS} = "true" ]; then
     mv /tmp/dh4096.pem /etc/openvpn/
 else
-    ./etc/openvpn/easy-rsa/build-dh
+    . /etc/openvpn/easy-rsa/build-dh
     cp dh2048.pem /etc/openvpn/
 fi
 
