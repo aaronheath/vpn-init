@@ -20,6 +20,9 @@ else
     USE_SUPPLIED_DH4096_KEYS="false"
 fi
 
+## Skip interactive post install steps
+export DEBIAN_FRONTEND=noninteractive
+
 ## Update repositories and upgrade the OS
 apt-get update
 apt-get dist-upgrade -y
